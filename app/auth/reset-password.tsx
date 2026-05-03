@@ -2,12 +2,13 @@ import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
 import AuthInput from '../../components/AuthInput';
 import CustomButton from '../../components/CustomButton';
+import { router } from 'expo-router';
 
 export default function ResetPasswordScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.title}>Forgot password</Text>
+        <Text style={styles.title}>Reset Password</Text>
         <Text style={styles.subtitle}>
           {"The password must be different than previous"}
         </Text>
@@ -27,7 +28,7 @@ export default function ResetPasswordScreen() {
 
         <CustomButton 
           title="Update Password" 
-          onPress={() => console.log('Password updated')} 
+          onPress={() => router.push('/auth/login')} 
         />
       </View>
     </SafeAreaView>

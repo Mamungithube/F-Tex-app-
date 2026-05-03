@@ -39,7 +39,7 @@ export default function LoginScreen() {
                         secureTextEntry
                     />
 
-                    <TouchableOpacity style={styles.forgotBtn}>
+                    <TouchableOpacity style={styles.forgotBtn} onPress={() => router.push('/auth/forgot-password')}>
                         <Text style={styles.forgotText}>Forgot Password?</Text>
                     </TouchableOpacity>
                 </View>
@@ -47,11 +47,7 @@ export default function LoginScreen() {
                 {/* অ্যাকশন বাটন */}
                 <CustomButton
                     title="Log In"
-                    onPress={() => {
-                        console.log('Login Successful');
-                        // লগইন সফল হলে হোম ড্যাশবোর্ডে পাঠাবে
-                        router.replace('/(tabs)');
-                    }}
+                    onPress={() => router.replace('/(tabs)')}
                 />
 
                 <Text style={styles.orText}>Or sign in with Google</Text>
