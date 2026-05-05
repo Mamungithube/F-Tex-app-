@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, SafeAreaView } from 'react-native';
 import AuthInput from '../../components/AuthInput';
 import CustomButton from '../../components/CustomButton';
-import { Colors } from '../../constants/theme';
+// import { Colors } from '../../constants/theme';
 import { router } from 'expo-router';
 
 export default function SignUpScreen() {

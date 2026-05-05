@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, SafeAreaView } from 'react-native';
 import AuthInput from '../../components/AuthInput';
 import CustomButton from '../../components/CustomButton';
-import { Colors } from '../../constants/theme'; // নিশ্চিত হোন theme.ts এ primary কালার আছে
+// import { Colors } from '../../constants/theme'; // নিশ্চিত হোন theme.ts এ primary কালার আছে
 import { router } from 'expo-router';
 
 export default function LoginScreen() {

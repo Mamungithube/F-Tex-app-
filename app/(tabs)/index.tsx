@@ -65,7 +65,7 @@ export default function HomeScreen() {
             </View>
 
             <View style={[styles.actionRow, {marginTop: 10}]}>
-              <TouchableOpacity style={styles.actionBtnOutline}>
+              <TouchableOpacity onPress={() => router.push('/home-details/irs-payment')} style={styles.actionBtnOutline}>
                 <Ionicons name="receipt-outline" size={20} color="black" />
                 <Text style={styles.actionText}>IRS Payment</Text>
               </TouchableOpacity>
